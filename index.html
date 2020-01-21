@@ -8,11 +8,20 @@
   <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
   <title>CodeWorks Day 1</title>
   <style>
-    .teal {
-      color: teal;
+    :root {
+      --primary: teal;
+      --secondary: rgb(187, 185, 185);
     }
 
-    .body {
+    .font-main {
+      color: var(--primary);
+    }
+
+    p {
+      color: var(--secondary);
+    }
+
+    body {
       text-align: center;
       font-family: 'Acme', sans-serif;
     }
@@ -20,10 +29,12 @@
 </head>
 
 <body>
-  <div class="body">
-    <h1 class="teal">Day 1 - Let's go!</h1>
-    <p>Kristina is ready to learn!</p>
-    <p>Coming from a background in HR and Finance, she is ready to put her creative mind to work!</p>
+  <div>
+    <h1 class="font-main">Day 1 - Let's go!</h1>
+    <div class="paragraph">
+      <p>Kristina is ready to learn!</p>
+      <p>Coming from a background in HR and Finance, she is ready to put her creative mind to work!</p>
+    </div>
   </div>
 </body>
 
